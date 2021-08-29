@@ -29,15 +29,15 @@
                 <td>{{employee.gender}}</td>
                 <td>
 
-                    <div class="dept-label" *ngFor ="let departments of employee.departments">
+                    <div class="dept-label" *ngFor ="let departments of employee.department">
                     {{departments}}
                     </div>
-                    <!-- <div class="dept-label">{{employee.departments}}</div> -->
+                    <!-- <div class="dept-label">{{employee.department}}</div> -->
                 </td>
                 <td>{{employee.salary}}</td>
                 <td>{{employee.createdDate}}</td>
                 <td>
-                    <img id={{employee.employeeId}} onclick="remove(this)"
+                    <img id={{employee.employeeId}} (click)="remove(employee.employeeId)"
                         src="../assets/icons/delete-black-18dp.svg"
                         alt="delete">
                     <img id={{employee.employeeId}} onclick="update(this)"

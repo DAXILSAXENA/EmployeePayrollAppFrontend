@@ -1,10 +1,10 @@
 export class Employee {
         employeeId!: number;
         name!: string;
-        departments!: string[];
+        department!: string[];
         profilePic!: string;
         gender!: string;
         salary!: number;
-        createdDate!: string;
+        createdDate!: Date;
         note!: string;
 }

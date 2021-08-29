@@ -14,12 +14,18 @@ export class HomeComponent implements OnInit {
   constructor(private httpService: HttpService) { }
 
   ngOnInit(): void {
-    this.httpService.getEmployeeData().subscribe(response=>
-      {
-        this.employeeDetails = response.data;
-        this.employeeCount = this.employeeDetails.length;
-        console.log(this.employeeDetails);
-      });
+    this.httpService.getEmployeeData().subscribe(response => {
+      this.employeeDetails = response.data;
+      this.employeeCount = this.employeeDetails.length;
+      console.log(this.employeeDetails);
+    });
+  }
+
+  remove(id: number) {
+    this.httpService.deleteEmployeeData(id).subscribe(data => {
+      console.log(data);
+      this.ngOnInit();
+    });
   }
 
 }

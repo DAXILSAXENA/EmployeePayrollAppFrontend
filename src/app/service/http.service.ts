@@ -10,6 +10,14 @@ export class HttpService {
   constructor( private httpClient: HttpClient) { }
 
   getEmployeeData(): Observable<any>{
-    return this.httpClient.get("http://localhost:8081/employeepayrollservice/get");
+    return this.httpClient.get("http://localhost:8080/employeepayrollservice/get");
+  }
+
+  addEmployeeData(body: any): Observable<any> {
+    return this.httpClient.post("http://localhost:8080/employeepayrollservice/create", body);
+  }
+
+  deleteEmployeeData(id: any): Observable<any> {
+    return this.httpClient.delete("http://localhost:8080/employeepayrollservice/delete/"+id);
   }
 }
