@@ -18,24 +18,24 @@
             <label class="label text" for="profile">Profile Image </label>
             <div class="profile-radio-content">
                 <mat-radio-group ngDefaultControl formControlName="profilePic">
-                    <mat-radio-button name="profile" color="primary" 
-                        value="../assets/profile-images/Ellipse -1.png" required>
+                    <mat-radio-button name="profile" color="primary" value="../assets/profile-images/Ellipse -1.png"
+                        required>
                         <img class="profile" id='image1' src="../assets/profile-images/Ellipse -1.png">
                     </mat-radio-button>
-                    <mat-radio-button name="profile" color="primary"
-                        value="../assets/profile-images/Ellipse -2.png" required>
+                    <mat-radio-button name="profile" color="primary" value="../assets/profile-images/Ellipse -2.png"
+                        required>
                         <img class="profile" id='image2' src="../assets/profile-images/Ellipse -2.png">
                     </mat-radio-button>
-                    <mat-radio-button name="profile" color="primary"
-                        value="../assets/profile-images/Ellipse -3.png" required>
+                    <mat-radio-button name="profile" color="primary" value="../assets/profile-images/Ellipse -3.png"
+                        required>
                         <img class="profile" id='image3' src="../assets/profile-images/Ellipse -3.png">
                     </mat-radio-button>
-                    <mat-radio-button name="profile" color="primary"
-                        value="../assets/profile-images/Ellipse -4.png" required>
+                    <mat-radio-button name="profile" color="primary" value="../assets/profile-images/Ellipse -4.png"
+                        required>
                         <img class="profile" id='image4' src="../assets/profile-images/Ellipse -4.png">
                     </mat-radio-button>
-                    <mat-radio-button name="profile" color="primary"
-                        value="../assets/profile-images/Ellipse -5.png" required>
+                    <mat-radio-button name="profile" color="primary" value="../assets/profile-images/Ellipse -5.png"
+                        required>
                         <img class="profile" id='image5' src="../assets/profile-images/Ellipse -5.png">
                     </mat-radio-button>
                 </mat-radio-group>
@@ -83,7 +83,8 @@
         <div class="row-content">
             <label class="label text" for="startDate"> Start Date </label>
             <mat-form-field>
-                <input matInput [matDatepicker]="picker" placeholder="Choose a date" formControlName="createdDate">
+                <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker" placeholder="Choose a date"
+                    formControlName="createdDate">
                 <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                 <mat-datepicker #picker></mat-datepicker>
             </mat-form-field>

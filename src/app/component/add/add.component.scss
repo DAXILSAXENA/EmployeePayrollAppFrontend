@@ -1,23 +1,23 @@
 .form-content {
-    min-height: calc(100% - 80px);
+    min-height: calc(100%);
     background-color: #f7f7f7;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 0px solid green;
 }
-
+  
 .form {
-    width: 65%;
-    padding: 44px 60px;
-    background: #ffffff 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #00000029;
+    width: 45%;
+    padding: 40px 35px;
+    background: #fff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px grey;
     border: 1px solid #f5f5f5;
     border-radius: 8px;
     opacity: 1;
     margin-top: 27px;
 }
-
+  
 .form-head {
     font: normal normal bold 24px/37px Roboto;
     letter-spacing: 0px;
@@ -26,23 +26,24 @@
     opacity: 1;
     padding-bottom: 20px;
 }
-
+  
 .label {
     min-width: 140px;
 }
-
+  
 label {
     padding: 12px 12px 12px 0;
     display: inline-block;
 }
-
+  
 .text {
     font-size: 16px;
     color: #42515f;
     opacity: 1;
-    font-family: Roboto;
+    font-family: Robonto;
+    margin-right: 10px;
 }
-
+  
 .example-full-width {
     width: 100%;
 }
@@ -54,35 +55,35 @@ label {
     align-items: center;
     border: 0px solid green;
 }
-
+  
 .profile-radio-content {
     display: flex;
     flex-direction: row;
 }
-
-.profile-radio-content > label {
+  
+.profile-radio-content>label {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items:center;
 }
-
+  
 .profile {
     width: 40px;
     border-radius: 50%;
-    margin-left: 5px;
-    margin-right: 10px;
-}
-
-.checkbox {
-    flex-direction: row;
-    margin-right: 10px;
+    margin-left: 12px;
+    margin-right: 15px;
 }
 
 .salary-input {
     display: flex;
     color: #87aa14;
     flex-direction: row;
-    width: 500px;
+    width: 1000px;
+}
+
+.checkbox {
+    flex-direction: row;
+    margin-right: 10px;
 }
 
 select {
@@ -103,12 +104,12 @@ select {
     justify-content: space-between;
     margin-top: 20px;
 }
-
+  
 .button {
     font-size: 20px;
     font-family: Roboto;
     letter-spacing: 0px;
-    color: #87aa14;
+    color: #42515f;
     opacity: 1;
     background: #f5f5f5;
     border: none;
@@ -119,13 +120,13 @@ select {
     cursor: pointer;
     border-radius: 5px;
 }
-
+  
 .submitButton {
     border: 1px solid #969696;
     background-color: #f5f5f5;
     margin-right: 30px;
 }
-
+  
 .cancelButton {
     border: 1px solid #969696;
     text-decoration: none;

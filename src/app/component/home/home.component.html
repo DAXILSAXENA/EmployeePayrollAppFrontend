@@ -32,10 +32,9 @@
                     <div class="dept-label" *ngFor ="let departments of employee.department">
                     {{departments}}
                     </div>
-                    <!-- <div class="dept-label">{{employee.department}}</div> -->
                 </td>
-                <td>{{employee.salary}}</td>
-                <td>{{employee.createdDate}}</td>
+                <td>&#8377; {{employee.salary}}</td>
+                <td>{{employee.createdDate | date:"dd MMM yyyy"}}</td>
                 <td>
                     <img id={{employee.employeeId}} (click)="remove(employee.employeeId)"
                         src="../assets/icons/delete-black-18dp.svg"
